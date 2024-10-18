@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+#fond_accueil {
+    background-image: url('../img/fond/fond_art.jpg');
+    background-size: cover;
+    filter: blur(2px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main_reservable a {
+    border-radius: 15px;
+}
+
+.main_reservable img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.main_reservable a {
+    width: 30%;
+    border-radius: 15px;
+}
+
+
+#formulaire_reservation, #demande_connexion, #formulaire_inscription {
+    display: none;
+}
+
+.text-gauche {
+    left: 10%;
+    top: 150%;
+}
+
+.h-vh-fond-entete {
+    height: 15vh;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .main_reservable a {
+        width: 45%;
+    }
+    
+    }
+    
+    @media only screen and (max-width: 600px) {
+        
+    .main_reservable a {
+        width: 90%;
+    }
+    
+    }

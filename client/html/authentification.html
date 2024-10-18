@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- TETE -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-output.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo/logo_worldskill_simple_min.png">
+    <title>WorldSkill Travel</title>
+</head>
+<!-- TETE -->
+
+<!-- CORPS -->
+<body id="body" class="h-screen"> 
+    
+    <!-- ENTETE -->
+    <header class="bg-sky-600">
+        <section class="h-screen" id="fond_accueil"></section>
+        <img class="absolute h-16" src="./img/logo/fleche.png" alt="">
+        <header class="flex justify-center flex-wrap absolute top-6 w-full">
+            <div class="w-full">
+                <h1 class="text-center text-7xl font-semibold text-white">WorldSkill Travel</h1>
+            </div>
+        </header>
+      </header>
+    <!-- ENTETE -->
+
+    <!-- PRINCIPALE -->
+    <main class="flex justify-center h-5/6 items-center absolute top-0 left-0 w-full">
+        
+        <!-- CONNEXION -->
+        <section id="formulaire_connexion" class="flex justify-center w-full h-full items-center">
+            
+            <div class="w-5/12 h-2/6 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10">
+                <!-- Titre -->
+                <h1 class="text-2xl">Authentification</h1>
+                
+                <!-- Mail -->
+                <div class="w-full flex justify-center">
+                    <label for="MailConnexion">Mail: </label>
+                    <input id="MailConnexion" name="MailConnexion" type="email" class="h-4/6">
+                </div>
+
+                <!-- Mot de passe -->
+                <div class="w-full flex justify-center">
+                    <label for="MotDePasseConnexion">Mot de passe: </label>
+                    <input id="MotDePasseConnexion" name="MotDePasseConnexion" type="password" class="h-4/6">
+                </div>
+                
+                <!-- Message d'information en cas d'echec -->
+                <div class="w-full flex justify-center">
+                    <p class="text-red-600" id="message_connexion"></p>
+                </div>
+    
+                <!-- Bouton -->
+                <div class="w-full flex justify-around">
+                    <button onclick="connexion()" class="p-2 bg-sky-400 rounded-lg">Connexion</button>
+                    <button onclick="pageInscription()" class="p-2 bg-sky-400 rounded-lg">Je veux m'inscrire</button>
+                </div>
+                
+            </div>
+        </section>
+        <!-- CONNEXION -->
+        
+        <!-- INSCRIPTION -->
+        <section id="formulaire_inscription" class="flex justify-center h-full items-center">
+            
+            <div class="w-5/12 h-2/6 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10">
+                <!-- Titre -->
+                <h1 class="text-2xl">Authentification</h1>
+                
+                <!-- Nom utilisateur -->
+                <div class="w-full flex justify-center">
+                    <label for="NomUtilisateurInscription">Nom utilisateur: </label>
+                    <input id="NomUtilisateurInscription" name="NomUtilisateurInscription" type="text" class="h-4/6">
+                </div>
+                
+                <!-- Mail -->
+                <div class="w-full flex justify-center">
+                    <label for="MailInscription">Mail: </label>
+                    <input id="MailInscription" name="MailInscription" type="email" class="h-4/6">
+                </div>
+                
+                <!-- Mot de passe -->
+                <div class="w-full flex justify-center">
+                    <label for="MotDePasseInscription">Mot de passe: </label>
+                    <input id="MotDePasseInscription" name="MotDePasseInscription" type="password" class="h-4/6">
+                </div>
+                
+                <!-- vérification mot de passe -->
+                <div class="w-full flex justify-center">
+                    <label for="MotDePasseVerifieInscription">Mot de passe: </label>
+                    <input id="MotDePasseVerifieInscription" name="MotDePasseVerifieInscription" type="password" class="h-4/6">
+                </div>
+                
+                <!-- Message d'information en cas d'echec -->
+                <div class="w-full flex justify-center">
+                    <p class="text-red-600" id="message_inscription"></p>
+                </div>
+                
+                <!-- Bouton -->
+                <div class="w-full flex justify-around">
+                    <button onclick="pageConnexion()" class="p-2 bg-sky-400 rounded-lg">Je veux me connecté</button>
+                    <button onclick="inscription()" class="p-2 bg-sky-400 rounded-lg">Inscription</button>
+                </div>
+                
+            </div>
+        </section>
+        <!-- INSCRIPTION -->
+
+    </main>
+    <!-- PRINCIPALE -->
+    
+    <!-- SCRIPT -->
+    <script src="./js/authentification.js"></script>
+    <!-- SCRIPT -->
+</body>
+<!-- CORPS -->
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- TETE -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-output.css" />
+    <link rel="icon" type="image/x-icon" href="./img/logo/logo_worldskill_simple_min.png">
+    <title>WorldSkill Travel</title>
+  </head>
+  <!-- TETE -->
+
+  <!-- CORPS -->
+  <body id="body">
+    <!-- ENTETE -->
+    <header class="bg-sky-600">
+      <section class="h-vh-fond-entete" id="fond_accueil"></section>
+      <header class="flex justify-center flex-wrap absolute top-6 w-full">
+          <a class="absolute top-0 left-10" href="./index.html"><img class=" h-16" src="./img/logo/fleche.png" alt=""></a>
+          <div class="w-full">
+              <h1 class="text-center text-7xl font-semibold text-white">WorldSkill Travel</h1>
+          </div>
+      </header>
+    </header>
+    <!-- ENTETE -->
+
+    <!-- PRINCIPALE -->
+    <main>
+
+      <!-- INFORMATION RESERVABLE -->
+      <section class="section_info_reservable h-screen flex justify-center items-center">
+        <div class="flex justify-around items-center h-4/6 bg-slate-100 p-3 w-11/12 rounded-xl">
+          <div id="description_reservable_img" class="w-full h-full flex justify-center">
+          </div>
+          <div class="w-2/4" id="description_reservable">
+          </div>
+        </div>
+      </section>
+      <!-- INFORMATION RESERVABLE -->
+  
+      <!-- FORMULAIRE -->
+      <section id="formulaire_reservation" class="flex justify-center mb-10">
+          <div action="" class="w-8/12 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10" method="post">
+              <!-- Titre -->
+              <h1 id="titreFormulaire" class="text-2xl"></h1>
+              <h1 id="information_formulaire" class="text-2xl w-full text-center text-red-600"></h1>
+              
+              <!-- selectionnion des date de réservation -->
+              <div class="w-full flex justify-around">
+                <div class="w-1/3 flex justify-around">
+                  <label for="date_debut">Date début: </label>
+                  <input name="date_debut" id="DateDebut" type="date" /><br />
+                </div>
+                <div class="w-1/3 flex justify-around">
+                  <label for="date_name">Date fin: </label>
+                  <input name="date_fin" id="DateFin" type="date" /><br />
+                </div>
+              </div>
+
+              <!-- Message du client -->
+              <div class="w-10/12 m-4">
+                <textarea class="w-full h-60" name="Message" id="Message"></textarea>
+              </div>
+              
+              <!-- Envoie du mail -->
+              <div class="w-full m-4 flex justify-center">
+                  <button onclick="envoieMail()" class="p-4 shadow-sm bg-sky-600 rounded-lg">Réserver</button>
+              </div>
+            </div>
+      </section>
+      <section id="demande_connexion" class="flex justify-center mb-10">
+        <!-- demande de connexion pour réserver -->
+        <div class="w-full m-4 flex justify-center">
+            <a class="p-4 shadow-sm bg-sky-600 rounded-lg" href="./authentification.html">Connecté vous pour réserver</a>
+        </div>
+      </section>
+      <!-- FORMULAIRE -->
+
+    </main>
+    <!-- PRINCIPALE -->
+
+    <!-- SCRIPT -->
+    <script src="./js/infoReservable.js"></script>
+    <script src="./class/Cl_Reservable.js"></script>
+    <!-- SCRIPT -->
+
+  </body>
+  <!-- CORPS -->
+
+</html>

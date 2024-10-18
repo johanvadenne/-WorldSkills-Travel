@@ -28,7 +28,6 @@ async function connexion() {
     });
     
     // si l'authentification est bonne créer une redirection
-    console.log(response.status)
     if (response.ok) {
         document.location.href = "http://127.0.0.1:8080/web/index.html";
     } 
@@ -81,7 +80,6 @@ async function inscription() {
         });
         
         // si l'inscription est bonne créer une redirection
-        console.log(response.status)
         if (response.ok) {
             document.location.href = "http://127.0.0.1:8080/web/index.html";
         } 

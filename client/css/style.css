@@ -37,7 +37,6 @@ body {
     border-radius: 15px;
 }
 
-
 #formulaire_reservation, #demande_connexion, #formulaire_inscription {
     display: none;
 }
@@ -56,16 +55,20 @@ body {
 
 @media only screen and (max-width: 1000px) {
     
-    .main_reservable a {
-        width: 45%;
-    }
+.main_reservable a {
+    width: 45%;
+}
+
+}
     
-    }
-    
-    @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
         
-    .main_reservable a {
-        width: 90%;
-    }
+.main_reservable a {
+    width: 90%;
+}
+    
+.h-vh-fond-entete {
+    height: 10vh;
+}
     
     }

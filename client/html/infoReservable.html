@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-output.css" />
     <link rel="icon" type="image/x-icon" href="./img/logo/logo_worldskill_simple_min.png">
-    <title>WorldSkill Travel</title>
+    <title>WorldSkills Travel</title>
   </head>
   <!-- TETE -->
 
@@ -18,10 +18,10 @@
     <!-- ENTETE -->
     <header class="bg-sky-600">
       <section class="h-vh-fond-entete" id="fond_accueil"></section>
-      <header class="flex justify-center flex-wrap absolute top-6 w-full">
-          <a class="absolute top-0 left-10" href="./index.html"><img class=" h-16" src="./img/logo/fleche.png" alt=""></a>
+      <header class="flex justify-center flex-wrap absolute lg:top-6 md:top-5 top-4 w-full">
+          <a class="absolute top-0 md:left-10 left-5" href="./index.html"><img class="lg:h-16 md:h-12 sm:h-10 h-6" src="./img/logo/fleche.png" alt=""></a>
           <div class="w-full">
-              <h1 class="text-center text-7xl font-semibold text-white">WorldSkill Travel</h1>
+            <h1 class="text-center lg:text-7xl md:text-5xl sm:text-4xl text-2xl font-semibold text-white">WorldSkills Travel</h1>
           </div>
       </header>
     </header>
@@ -31,19 +31,19 @@
     <main>
 
       <!-- INFORMATION RESERVABLE -->
-      <section class="section_info_reservable h-screen flex justify-center items-center">
-        <div class="flex justify-around items-center h-4/6 bg-slate-100 p-3 w-11/12 rounded-xl">
-          <div id="description_reservable_img" class="w-full h-full flex justify-center">
+      <section class="section_info_reservable flex justify-center items-center">
+        <div class="flex flex-wrap justify-around items-center mt-28 bg-slate-100 ms:p-3 w-11/12 rounded-xl">
+          <div id="description_reservable_img" class="lg:w-3/4 flex flex-wrap justify-around">
           </div>
-          <div class="w-2/4" id="description_reservable">
+          <div class="lg:w-1/4 p-4" id="description_reservable">
           </div>
         </div>
       </section>
       <!-- INFORMATION RESERVABLE -->
   
       <!-- FORMULAIRE -->
-      <section id="formulaire_reservation" class="flex justify-center mb-10">
-          <div action="" class="w-8/12 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10" method="post">
+      <section id="formulaire_reservation" class="flex justify-center mb-10 mt-10 text-sm">
+          <div action="" class="lg:w-8/12 w-11/12 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10" method="post">
               <!-- Titre -->
               <h1 id="titreFormulaire" class="text-2xl"></h1>
               <h1 id="information_formulaire" class="text-2xl w-full text-center text-red-600"></h1>
@@ -61,7 +61,8 @@
               </div>
 
               <!-- Message du client -->
-              <div class="w-10/12 m-4">
+              <div class="lg:w-10/12 w-full m-4">
+                <label for="Message">Message: </label>
                 <textarea class="w-full h-60" name="Message" id="Message"></textarea>
               </div>
               
@@ -71,7 +72,8 @@
               </div>
             </div>
       </section>
-      <section id="demande_connexion" class="flex justify-center mb-10">
+      
+      <section id="demande_connexion" class="flex justify-center mb-10 mt-10">
         <!-- demande de connexion pour réserver -->
         <div class="w-full m-4 flex justify-center">
             <a class="p-4 shadow-sm bg-sky-600 rounded-lg" href="./authentification.html">Connecté vous pour réserver</a>

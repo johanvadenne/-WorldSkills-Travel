@@ -10,7 +10,7 @@ app.use(session({
     secret: 'keyboard cat', 
     resave: false, 
     saveUninitialized: false, 
-    cookie: { maxAge: 60000 }
+    cookie: { maxAge: 600000 }
 }))
 
 // Middleware pour parser le JSON

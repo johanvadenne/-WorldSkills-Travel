@@ -6,7 +6,7 @@ const crypto = require('crypto');
 // permet l'envoie d'un mail
 async function envoieMail(req, res) {
 
-    if (req.session.IdCompteUtilisateur) {
+    if (!req.session.IdCompteUtilisateur) {
         res.status(401).json("Pas autorizer");
     }
     else {

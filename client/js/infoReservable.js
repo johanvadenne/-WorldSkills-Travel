@@ -46,7 +46,7 @@ async function afficheReservable() {
     const reservable = await getReservable();
 
     // afiche l'image
-    description_reservable_img.innerHTML = `<img class="m-10 rounded-xl" src="./img/bdd-image/${reservable.LienImage}">`
+    description_reservable_img.innerHTML = `<img class="m-10 rounded-xl w-full" src="./img/bdd-image/${reservable.LienImage}">`
     
     // afiche les données complémentaire
     description_reservable.innerHTML = `
@@ -75,7 +75,6 @@ async function afficheReservable() {
 
 async function verifieUtilisateurAuthentifier() {
     const response = await fetch('http://127.0.0.1:8080/api/utilisateurAuthentifier');
-    console.log(response)
     return response.ok
 }
 

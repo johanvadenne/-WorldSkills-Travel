@@ -47,7 +47,7 @@ async function afficheReservable() {
         for (const reservable of reservables) {
             
             main_reservable.innerHTML += `<a class="bg-slate-100 p-3 mb-3 hover:bg-slate-200" href="./infoReservable.html?IdReservable=${reservable.IdReservable}">
-                <img class="w-full" src="./img/bdd-image/${reservable.LienImage}" alt="">
+                <img src="./img/bdd-image/${reservable.LienImage}" alt="">
 
                 <p class="lg:text-xl text-lg">Pays: ${reservable.Pays}</p>
                 <p class="lg:text-xl text-lg">Région: ${reservable.Region}</p>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <!-- TETE -->
+<head id="head">
+  <!-- SCRIPT HEAD -->
+  <script src="./js/head.js"></script>
+  <!-- SCRIPT HEAD -->
+</head>
+  <!-- TETE -->
+
+  <!-- CORPS -->
+  <body id="body">
+    <!-- ENTETE -->
+    <header class="bg-sky-600">
+      <section class="h-vh-fond-entete" id="fond_accueil"></section>
+      <header class="flex justify-center flex-wrap absolute lg:top-6 md:top-5 top-4 w-full">
+          <a class="absolute top-0 md:left-10 left-5" href="./index.html"><img class="lg:h-16 md:h-12 sm:h-10 h-6" src="./img/logo/fleche.png" alt=""></a>
+          <div class="w-full">
+            <h1 class="text-center lg:text-7xl md:text-5xl sm:text-4xl text-2xl font-semibold text-white">WorldSkills Travel</h1>
+          </div>
+      </header>
+    </header>
+    <!-- ENTETE -->
+
+    <!-- PRINCIPALE -->
+    <main>
+
+      <!-- INFORMATION RESERVABLE -->
+      <section class="section_info_reservable flex justify-center items-center">
+        <div class="flex flex-wrap justify-around items-center mt-28 bg-slate-100 ms:p-3 w-11/12 rounded-xl">
+          <div id="description_reservable_img" class="lg:w-3/4 flex flex-wrap justify-around">
+          </div>
+          <div class="lg:w-1/4 p-4" id="description_reservable">
+          </div>
+        </div>
+      </section>
+      <!-- INFORMATION RESERVABLE -->
+  
+      <!-- FORMULAIRE -->
+      <section id="formulaire_reservation" class="flex justify-center mb-10 mt-10 text-sm">
+          <div action="" class="lg:w-8/12 w-11/12 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10" method="post">
+              <!-- Titre -->
+              <h1 id="titreFormulaire" class="text-2xl text-center"></h1>
+              <h1 id="information_formulaire" class="text-2xl w-full text-center text-red-600"></h1>
+              
+              <!-- selectionnion des date de réservation -->
+              <div class="w-full sm:flex sm:justify-around flex justify-center">
+                <div class="sm:w-1/3 sm:flex sm:justify-around p-1">
+                  <label for="date_debut">Date début: </label>
+                  <input class="rounded-lg p-1" name="date_debut" id="DateDebut" type="date" /><br />
+                </div>
+                <div class="sm:w-1/3 sm:flex sm:justify-around p-1">
+                  <label for="date_name">Date fin: </label>
+                  <input class="rounded-lg p-1" name="date_fin" id="DateFin" type="date" /><br />
+                </div>
+              </div>
+
+              <!-- Message du client -->
+              <div class="lg:w-10/12 w-full m-4">
+                <label for="Message">Message: </label>
+                <textarea class="w-full h-60 rounded-lg p-1" name="Message" id="Message"></textarea>
+              </div>
+              
+              <!-- Envoie du mail -->
+              <div class="w-full m-4 flex justify-center">
+                  <button onclick="envoieMail()" class="p-4 shadow-sm bg-sky-600 rounded-lg">Réserver</button>
+              </div>
+            </div>
+      </section>
+      
+      <section id="demande_connexion" class="flex justify-center mb-10 mt-10">
+        <!-- demande de connexion pour réserver -->
+        <div class="w-full m-4 flex justify-center">
+            <a class="p-4 shadow-sm bg-sky-600 rounded-lg" href="./authentification.html">Connecté vous pour réserver</a>
+        </div>
+      </section>
+      <!-- FORMULAIRE -->
+
+    </main>
+    <!-- PRINCIPALE -->
+
+    <!-- SCRIPT -->
+    <script src="./js/infoReservable.js"></script>
+    <script src="./class/Cl_Reservable.js"></script>
+    <!-- SCRIPT -->
+
+  </body>
+  <!-- CORPS -->
+
+</html>

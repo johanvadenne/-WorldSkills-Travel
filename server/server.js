@@ -30,6 +30,8 @@ app.get('/', function(req, res, next) {
     }
   })
 
+
+  
 // dossier client web
 app.get('/web/:file', function (req, res) {
     res.sendFile(path.join(__dirname, '../client/html/', req.params.file));

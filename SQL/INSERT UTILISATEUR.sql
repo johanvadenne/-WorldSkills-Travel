@@ -1,0 +1,2 @@
+INSERT INTO public."T_CompteUtilisateur"("Nom", "Prenom", "Mail", "MotDePasse", "Salt")
+VALUES ('World', 'Skill', 'wordskill@gmail.com', '8716b968c29a60556a8f3bac7dac9aa6e85add32c1198b8dd3907c7d4d86e6b07576fd67208985d9f7aaa83ffc5644b1b0212a9594b519ce4c6d490e9f07cca4', 'FaGdcZUPWoHo1V0nJvfCGFLK5FMhI+xTcIStOfCEEUM0jAq2zxzS7P8k05wM9f65bhLU5tZL9FzGyXh1Xlcmfnz8eRJno2P2ccjDnMjaa1LtaaNM9wWnWoZuFWzDmaFv/qnvdS7t/AN2F4t8IN+di7C8tEftfR0J+eXau/vGh24=');

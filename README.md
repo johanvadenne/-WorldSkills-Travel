@@ -10,7 +10,7 @@
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100" height="100"/> </a> 
 
 ## Technologie ⚙
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="100" height="100"/> </a> 
+<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="100" height="100"/> API</a> 
 <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="100" height="100"/> </a> 
 <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="100" height="100"/> </a> </p>
 
@@ -24,6 +24,19 @@
 
 ### Réservation par mail
 ![Acueil](./client/image/screen/Reservation.png)
+
+### Mail
+![Acueil](./client/image/screen/MailReservation.png)
+
+## Sécurité
+- Requête préparer contre injection SQL 💉
+- Gestion de session d'authentification 👩‍💻
+- Communication par code http (200, 404, 500, ...) 📢
+- Mot de passe enregistré dans un .env
+- Création d'utilisateur avec le strict nécessaire en terme de privilèges
+
+## MCD
+![Acueil](./client/image/screen/MCD.png)
 
 
 ## Information

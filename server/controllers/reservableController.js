@@ -9,7 +9,7 @@ async function getReservables(req, res) {
     res.status(200).json(reservables);
 }
 
-// Retourne un reservable par son ID
+// Retourne un reservable par son Id
 async function getReservable(req, res) {
     const Id = parseInt(req.params.id); // récupération de l'id
     const client = await BDD.connect(); // connection

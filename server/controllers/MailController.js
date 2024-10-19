@@ -62,14 +62,11 @@ async function envoieMail(req, res) {
                 from: process.env.MAIL_SERVEUR,
                 to: 'johanvadennewordskill@gmail.com',
                 subject: `Réservation ${reservableJson.NomReservable} - ${DateDebut} / ${DateFin}`,
-                text: `${Message}
-                
-                Validé: http://127.0.0.1:8080/api/reservation/valider?${chaine_url_encode}
-                Refusé: http://127.0.0.1:8080/api/reservation/refuser?${chaine_url_encode}
-                
-                <button>Réserver</button>
-                
-                <a href="./authentification.html">Connecté vous pour réserver</a>
+                html: `${Message}
+                <br>
+                <br>
+                <a href="http://127.0.0.1:8080/api/reservation/valider?${chaine_url_encode}">Validé</a>
+                <a href="http://127.0.0.1:8080/api/reservation/refuser?${chaine_url_encode}">Refusé</a>
                 `
             };
             

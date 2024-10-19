@@ -30,10 +30,16 @@
 
 ## Sécurité
 - Requête préparer contre injection SQL 💉
+- Hashage de données personnel 🔑
 - Gestion de session d'authentification 👩‍💻
 - Communication par code http (200, 404, 500, ...) 📢
 - Mot de passe enregistré dans un .env
 - Création d'utilisateur avec le strict nécessaire en terme de privilèges
+
+## Gestion des erreur
+![Acueil](./client/image/screen/Erreur.png)
+![Acueil](./client/image/screen/Erreur_2.png)
+
 
 ## MCD
 ![Acueil](./client/image/screen/MCD.png)

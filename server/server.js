@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const session = require('express-session');
-const crypto = require('crypto');
-var sessUtilisateur = null;
 
 // Gestion de session
 app.use(session({ 
@@ -17,23 +15,9 @@ app.use(session({
 app.use(express.json());
 
 
-app.get('/', function(req, res, next) {
-    if (req.session.views) {
-      req.session.views++
-      res.setHeader('Content-Type', 'text/html')
-      res.write('<p>views: ' + req.session.views + '</p>')
-      res.write('<p>expires in: ' + (req.session.cookie.maxAge / 1000) + 's</p>')
-      res.end()
-    } else {
-      req.session.views = 1
-      res.end('welcome to the session demo. refresh!')
-    }
-  })
-
-
-  
 // dossier client web
 app.get('/web/:file', function (req, res) {
+    
     res.sendFile(path.join(__dirname, '../client/html/', req.params.file));
 });
 app.get('/web/css/:file', function (req, res) {

@@ -115,7 +115,7 @@ async function envoieMail() {
 
 function afficherReservationPriseEnCompte() {
     document.getElementById("formulaire_reservation").innerHTML = `
-    <h1>Votre réservation à été envoyé, veuillez attendre la réponse de propriétaire.</h1>
+    <h1>Votre réservation à été envoyé, veuillez attendre la réponse de propriétaire. ✅</h1>
     `
 }
 
@@ -124,7 +124,7 @@ function afficherErreur() {
     document.getElementById("body").innerHTML = `
     <main class="h-screen flex justify-center items-center">
         <div class="flex justify-center flex-wrap h-screen items-center">
-            <h1 class="text-2xl w-full text-center">Nous sommes désolée, une erreur c'est produit du coté de nos server</h1>
+            <h1 class="text-2xl w-full text-center">Nous sommes désolées, une erreur s'est produite du côté de nos serveurs</h1>
             <img class="h-2/4" src="./img/erreur/man.png" alt="image erreur">
         </div>
     </main>`

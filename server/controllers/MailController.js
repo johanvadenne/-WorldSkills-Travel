@@ -37,8 +37,8 @@ async function envoieMail(req, res) {
             
             // construit la requete de transport pour l'envoie du mail
             var transporter = nodemailer.createTransport({
-                service: 'gmail',
-                host: "smtp.gmail.com",
+                service: process.env.SERVICE_MAIL,
+                host: process.env.HOST_MAIL,
                 port: 465,
                 secure: true,
                 auth: {

@@ -11,12 +11,22 @@
 }
 
 #fond_accueil {
-    background-image: url('../img/fond/fond_art.jpg');
+    background-image: url('../img/fond/fond_art-moyen.jpg');
     background-size: cover;
     filter: blur(2px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+#fond_authentification {
+    background-image: url('../img/fond/authentification-moyen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body {

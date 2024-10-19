@@ -2,24 +2,19 @@
 <html lang="fr">
 
 <!-- TETE -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-output.css">
-    <link rel="icon" type="image/x-icon" href="./img/logo/logo_worldskill_simple_min.png">
-    <title>WorldSkill Travel</title>
+<head id="head">
+    <!-- SCRIPT HEAD -->
+    <script src="./js/head.js"></script>
+    <!-- SCRIPT HEAD -->
 </head>
 <!-- TETE -->
 
 <!-- CORPS -->
-<body id="body" class="h-screen"> 
+<body id="body" class=""> 
     
     <!-- ENTETE -->
+    <section class="h-screen" id="fond_authentification"></section>
     <header class="bg-sky-600">
-        <section class="h-screen" id="fond_accueil"></section>
-        <img class="absolute h-16" src="./img/logo/fleche.png" alt="">
         <header class="flex justify-center flex-wrap absolute top-6 w-full">
             <div class="w-full">
                 <h1 class="text-center lg:text-7xl md:text-5xl sm:text-4xl text-2xl font-semibold text-white">WorldSkills Travel</h1>
@@ -29,25 +24,28 @@
     <!-- ENTETE -->
 
     <!-- PRINCIPALE -->
-    <main class="flex justify-center h-5/6 items-center absolute top-0 left-0 w-full">
+    <main class="h-5/6 items-center absolute top-0 left-0 w-full">
         
         <!-- CONNEXION -->
-        <section id="formulaire_connexion" class="flex justify-center w-full h-full items-center">
+        <section id="formulaire_connexion" class="flex ml-14 lg:mt-52 mt-40 w-full h-4/6 items-center">
             
-            <div class="lg:w-5/12 md:w-7/12 md:text-lg text-sm w-9/12 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10">
+            <div class="2xl:w-3/12 xl:w-4/12 h-full md:w-7/12 md:text-lg text-sm w-9/12 flex justify-center flex-wrap bg-slate-100 rounded-3xl p-10">
                 <!-- Titre -->
-                <h1 class="text-2xl">Authentification</h1>
+                <div class="w-full flex justify-center items-center">
+                    <h1 class="text-3xl font-semibold">Connexion</h1>
+                    <img class=" w-1/12" src="./img/logo/logo_worldskill_simple_min.png" alt="logo WorldSkills">
+                </div>
                 
                 <!-- Mail -->
-                <div class="w-full flex justify-center">
-                    <label for="MailConnexion">Mail: </label>
-                    <input id="MailConnexion" name="MailConnexion" type="email" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="MailConnexion">Mail: </label>
+                    <input class="w-full rounded-lg p-1" id="MailConnexion" name="MailConnexion" type="email" class="h-4/6">
                 </div>
 
                 <!-- Mot de passe -->
-                <div class="w-full flex justify-center">
-                    <label for="MotDePasseConnexion">Mot de passe: </label>
-                    <input id="MotDePasseConnexion" name="MotDePasseConnexion" type="password" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="MotDePasseConnexion">Mot de passe: </label>
+                    <input class="w-full rounded-lg p-1" id="MotDePasseConnexion" name="MotDePasseConnexion" type="password" class="h-4/6">
                 </div>
                 
                 <!-- Message d'information en cas d'echec -->
@@ -56,9 +54,9 @@
                 </div>
     
                 <!-- Bouton -->
-                <div class="w-full flex justify-around">
-                    <button onclick="connexion()" class="p-2 bg-sky-400 rounded-lg">Connexion</button>
-                    <button onclick="pageInscription()" class="p-2 bg-sky-400 rounded-lg">Je veux m'inscrire</button>
+                <div class="flex justify-around flex-wrap w-4/5 ">
+                    <button onclick="connexion()" class="px-2 bg-sky-400 rounded-lg font-semibold text-white m-1">Connexion</button>
+                    <button onclick="pageInscription()" class="px-2 bg-white rounded-lg border-black border-solid border-2 m-1">Je veux m'inscrire</button>
                 </div>
                 
             </div>
@@ -66,34 +64,37 @@
         <!-- CONNEXION -->
         
         <!-- INSCRIPTION -->
-        <section id="formulaire_inscription" class="flex justify-center h-full items-center">
+        <section id="formulaire_inscription" class="flex ml-14 mt-52 w-full items-center">
             
-            <div class="w-5/12 h-2/6 flex justify-center flex-wrap bg-slate-100 rounded-lg p-10">
+            <div class="lg:w-3/12 h-full md:w-7/12 md:text-lg text-sm w-9/12 flex justify-center flex-wrap bg-slate-100 rounded-3xl p-10">
                 <!-- Titre -->
-                <h1 class="text-2xl">Authentification</h1>
+                <div class="w-full flex justify-center items-center">
+                    <h1 class="text-3xl font-semibold">Inscription</h1>
+                    <img class=" w-1/12" src="./img/logo/logo_worldskill_simple_min.png" alt="logo WorldSkills">
+                </div>
                 
                 <!-- Nom utilisateur -->
-                <div class="w-full flex justify-center">
-                    <label for="NomUtilisateurInscription">Nom utilisateur: </label>
-                    <input id="NomUtilisateurInscription" name="NomUtilisateurInscription" type="text" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="NomUtilisateurInscription">Nom utilisateur: </label>
+                    <input class="w-full rounded-lg p-1" id="NomUtilisateurInscription" name="NomUtilisateurInscription" type="text" class="h-4/6">
                 </div>
                 
                 <!-- Mail -->
-                <div class="w-full flex justify-center">
-                    <label for="MailInscription">Mail: </label>
-                    <input id="MailInscription" name="MailInscription" type="email" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="MailInscription">Mail: </label>
+                    <input class="w-full rounded-lg p-1" id="MailInscription" name="MailInscription" type="email" class="h-4/6">
                 </div>
                 
                 <!-- Mot de passe -->
-                <div class="w-full flex justify-center">
-                    <label for="MotDePasseInscription">Mot de passe: </label>
-                    <input id="MotDePasseInscription" name="MotDePasseInscription" type="password" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="MotDePasseInscription">Mot de passe: </label>
+                    <input class="w-full rounded-lg p-1" id="MotDePasseInscription" name="MotDePasseInscription" type="password" class="h-4/6">
                 </div>
                 
                 <!-- vérification mot de passe -->
-                <div class="w-full flex justify-center">
-                    <label for="MotDePasseVerifieInscription">Mot de passe: </label>
-                    <input id="MotDePasseVerifieInscription" name="MotDePasseVerifieInscription" type="password" class="h-4/6">
+                <div class="w-full">
+                    <label class="w-full" for="MotDePasseVerifieInscription">Mot de passe: </label>
+                    <input class="w-full rounded-lg p-1" id="MotDePasseVerifieInscription" name="MotDePasseVerifieInscription" type="password" class="h-4/6">
                 </div>
                 
                 <!-- Message d'information en cas d'echec -->
@@ -102,9 +103,9 @@
                 </div>
                 
                 <!-- Bouton -->
-                <div class="w-full flex justify-around">
-                    <button onclick="pageConnexion()" class="p-2 bg-sky-400 rounded-lg">Je veux me connecté</button>
-                    <button onclick="inscription()" class="p-2 bg-sky-400 rounded-lg">Inscription</button>
+                <div class="flex justify-around flex-wrap w-4/5 pt-1">
+                    <button onclick="inscription()" class="px-2 w-full bg-sky-400 rounded-lg font-semibold text-white m-1">Inscription</button>
+                    <button onclick="pageConnexion()" class="px-2 w-full bg-white rounded-lg border-black border-solid border-2 m-1">Je veux me connecté</button>
                 </div>
                 
             </div>

@@ -20,13 +20,16 @@
 ![Acueil](./client/image/screen/Accueil.png)
 
 ### Navigation
-![Acueil](./client/image/screen/Navigation.png)
+![Navigation](./client/image/screen/Navigation.png)
 
 ### Réservation par mail
-![Acueil](./client/image/screen/Reservation.png)
+![Reservation](./client/image/screen/Reservation.png)
 
 ### Mail
-![Acueil](./client/image/screen/MailReservation.png)
+![MailReservation](./client/image/screen/MailReservation.png)
+
+### Responsive
+![Responsive](./client/image/screen/Responsive.png)
 
 ## Sécurité
 - Requête préparer contre injection SQL 💉

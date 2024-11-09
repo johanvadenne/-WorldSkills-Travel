@@ -1,2 +1,0 @@
-INSERT INTO public."T_CompteUtilisateur"("Nom", "Prenom", "Mail", "MotDePasse")
-VALUES ('World', 'Skill', 'wordskill@gmail.com', '8716b968c29a60556a8f3bac7dac9aa6e85add32c1198b8dd3907c7d4d86e6b07576fd67208985d9f7aaa83ffc5644b1b0212a9594b519ce4c6d490e9f07cca4');

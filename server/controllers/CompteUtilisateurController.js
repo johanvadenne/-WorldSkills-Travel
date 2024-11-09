@@ -52,7 +52,7 @@ async function inscription(req, res) {
     // connection bdd
     const client = await BDD.connect();
     // requete préparé
-    const result = await client.query(`INSERT INTO public."T_CompteUtilisateur" ("Mail", "MotDePasse", "NomUtilisateur") VALUES 
+    const result = await client.query(`INSERT INTO public."T_CompteUtilisateur" ("Mail", "MotDePasse", "Nom") VALUES 
     ($1, $2, $3) RETURNING "IdCompteUtilisateur";`, 
     [sha256(Mail), sha256(MotDePasse), NomUtilisateur]);
     // récupération des résultat

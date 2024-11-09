@@ -1,5 +1,5 @@
 
-INSERT INTO public."T_Reservable"("NomReservable", "Prix", "Pays", "Region", "Ville", "Rue ...", "IdCompteUtilisateurProprietaire", "LienImage") VALUES 
+INSERT INTO public."T_Reservable"("NomReservable", "Prix", "Pays", "Region", "Ville", "Adresse", "IdCompteUtilisateurProprietaire", "LienImage") VALUES 
 ('Campigne en forêt', '200.00', 'France', 'Bourgogne-Franche-Comté', 'Bangkok', 'Rue ...', 1, 'pexels-ahmetyuksek-28971101.jpg'),
 ('Natation', '10.00', 'France', 'Bretagne', 'Paris', 'Rue ...', 1, 'pexels-ajaybhargavguduru-863988.jpg'),
 ('Maison familiale', '300.00', 'France', 'Centre-Val de Loire', 'Londres', 'Rue ...', 1, 'pexels-binyaminmellish-186077.jpg'),

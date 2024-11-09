@@ -7,7 +7,6 @@ CREATE TABLE public."T_TypeReservable"(
 CREATE TABLE public."T_CompteUtilisateur"(
    "IdCompteUtilisateur" SERIAL,
    "Nom" VARCHAR(50)  NOT NULL,
-   "Prenom" VARCHAR(50)  NOT NULL,
    "Mail" VARCHAR(256)  NOT NULL,
    "MotDePasse" VARCHAR(256)  NOT NULL,
    PRIMARY KEY("IdCompteUtilisateur")
@@ -32,9 +31,10 @@ CREATE TABLE public."T_Reservable"(
    "Region" VARCHAR(50)  NOT NULL,
    "Ville" VARCHAR(50)  NOT NULL,
    "Adresse" VARCHAR(256)  NOT NULL,
+   "LienImage" VARCHAR(256)  NOT NULL,
    "IdCompteUtilisateurProprietaire" INTEGER NOT NULL,
    PRIMARY KEY("IdReservable"),
-   FOREIGN KEY("IdCompteUtilisateur") REFERENCES public."T_CompteUtilisateur"("IdCompteUtilisateur")
+   FOREIGN KEY("IdCompteUtilisateurProprietaire") REFERENCES public."T_CompteUtilisateur"("IdCompteUtilisateur")
 );
 
 CREATE TABLE public."T_Reservation"(

@@ -118,7 +118,7 @@ CREATE TABLE public."T_AssoReservableType"(
 ```nodejs
 npm install
 
-node .\server\server.js
+npm start
 ```
 
 allez sur le navigateur de votre choix: http://127.0.0.1:8080/web/index.html
